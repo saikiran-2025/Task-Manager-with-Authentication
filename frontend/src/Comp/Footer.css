@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*=========================
+        FOOTER
+=========================*/
+.footer-page{
+    width:100%;
+    background:#111827;
+    color:#f9fafb;
+    margin-top:60px;
+}
+
+/*=========================
+      CONTAINER
+=========================*/
+
+.footer-wrapper{
+    max-width:1300px;
+    margin:auto;
+    padding:60px 40px 40px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:40px;
+}
+
+/*=========================
+        CARDS
+=========================*/
+
+.footer-card{
+    display:flex;
+    flex-direction:column;
+}
+
+/*=========================
+        HEADINGS
+=========================*/
+
+.footer-heading{
+    margin-bottom:20px;
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+    line-height:1.4;
+}
+
+.footer-subtitle{
+    margin-bottom:20px;
+    color:#fff;
+    font-size:22px;
+    font-weight:600;
+    position:relative;
+}
+
+.footer-subtitle::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:55px;
+    height:3px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+/*=========================
+          TEXT
+=========================*/
+
+.footer-text{
+    margin-bottom:15px;
+    color:#d1d5db;
+    font-size:15px;
+    line-height:1.8;
+}
+
+/*=========================
+          LIST
+=========================*/
+
+.footer-list{
+    list-style:none;
+    padding:0;
+}
+
+.footer-list-item{
+    position:relative;
+    margin-bottom:14px;
+    padding-left:20px;
+    color:#d1d5db;
+    font-size:15px;
+    line-height:1.7;
+}
+
+.footer-list-item::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:#22c55e;
+    font-weight:700;
+}
+
+/*=========================
+      SOCIAL ICONS
+=========================*/
+
+.footer-social{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:10px;
+}
+
+.footer-social-link{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    background:#1f2937;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.footer-social-link:hover{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(37,99,235,.35);
+}
+
+/*=========================
+      BOTTOM BAR
+=========================*/
+
+.footer-bottom{
+    padding:20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+    background:#0f172a;
+}
+
+.footer-bottom-text{
+    color:#cbd5e1;
+    font-size:15px;
+}
+
+/*=========================
+      RESPONSIVE
+=========================*/
+
+@media(max-width:992px){
+
+    .footer-wrapper{
+        grid-template-columns:repeat(2,1fr);
+        padding:50px 30px;
+        gap:35px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer-wrapper{
+        grid-template-columns:1fr;
+        padding:40px 25px;
+        gap:30px;
+    }
+
+    .footer-heading{
+        font-size:24px;
+    }
+
+    .footer-subtitle{
+        font-size:20px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .footer-wrapper{
+        padding:35px 20px;
+    }
+
+    .footer-heading{
+        font-size:22px;
+    }
+
+    .footer-subtitle{
+        font-size:18px;
+    }
+
+    .footer-text,
+    .footer-list-item,
+    .footer-bottom-text{
+        font-size:14px;
+    }
+
+    .footer-social-link{
+        width:40px;
+        height:40px;
+        font-size:16px;
+    }
+
+}
