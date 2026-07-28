@@ -35,7 +35,7 @@ const Register = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/register", {
+      const res = await axios.post("https://task-manager-with-authentication-backend.onrender.com/register", {
         fullname,
         email,
         pwd,
