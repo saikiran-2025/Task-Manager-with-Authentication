@@ -14,7 +14,7 @@ const Logout = () => {
         // Optional: call backend logout if you really need it
         if (user && user.email) {
           await axios.post(
-            `http://localhost:3000/logout/${encodeURIComponent(user.email)}`
+            `https://task-manager-with-authentication-backend.onrender.com/logout/${encodeURIComponent(user.email)}`
           );
         }
 
