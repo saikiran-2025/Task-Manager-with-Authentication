@@ -12,7 +12,7 @@ const Missed_task = () => {
     try {
       setError("");
 
-      const res = await axios.get("http://localhost:3000/tasks/missed");
+      const res = await axios.get("https://task-manager-with-authentication-backend.onrender.com/tasks/missed");
 
       setTasks(res.data.tasks || []);
       setMsg(res.data.msg || "Missed tasks fetched successfully");
