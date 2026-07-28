@@ -24,7 +24,7 @@ const Add_task = () => {
     try {
       const dueDateIso = new Date(dueDateLocal).toISOString();
 
-      const res = await axios.post("http://localhost:3000/addtask", {
+      const res = await axios.post("https://task-manager-with-authentication-backend.onrender.com/addtask", {
         tasktitle,
         description,
         dueDate: dueDateIso,
