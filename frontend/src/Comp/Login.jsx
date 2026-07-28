@@ -24,7 +24,7 @@ const Login = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/login", {
+      const res = await axios.post("https://task-manager-with-authentication-backend.onrender.com/login", {
         email,
         pwd,
       });
