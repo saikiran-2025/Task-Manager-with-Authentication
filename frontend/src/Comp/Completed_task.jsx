@@ -12,7 +12,7 @@ const Completed_task = () => {
     try {
       setError("");
 
-      const res = await axios.get("http://localhost:3000/tasks/completed");
+      const res = await axios.get("https://task-manager-with-authentication-backend.onrender.com/tasks/completed");
 
       setTasks(res.data.tasks || []);
       setMsg(res.data.msg || "Completed tasks fetched successfully");
