@@ -33,7 +33,7 @@ const Upcoming_task = () => {
     try {
       setError("");
 
-      const res = await axios.get("http://localhost:3000/tasks/upcoming");
+      const res = await axios.get("https://task-manager-with-authentication-backend.onrender.com/tasks/upcoming");
 
       setTasks(res.data.tasks || []);
     } catch (err) {
@@ -101,7 +101,7 @@ const Upcoming_task = () => {
       setError("");
       setMsg("");
 
-      const res = await axios.delete(`http://localhost:3000/tasks/${id}`);
+      const res = await axios.delete(`https://task-manager-with-authentication-backend.onrender.com/tasks/${id}`);
 
       setMsg(res.data.msg || "Task deleted successfully");
 
